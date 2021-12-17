@@ -1,5 +1,4 @@
 var ram = getServerMaxRam;)
 var host = getHostname();
 ram = math.round(ram / 2.5);
-scp(pumpnsuck.script, 24.9.7.3, host);
 spawn(pumpnsuck.script, ram);

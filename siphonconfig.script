@@ -3,4 +3,4 @@ var maxRam = getServerMaxRam(host);
 var ram;
 ram = Math.round(maxRam / 2.5);
 tprint(host + " has " + maxRam + " GB of RAM. The PNS script will run with " + ram + " threads.")
-spawn('pumpnsuck.script', ram);
+spawn('pns.script', ram);

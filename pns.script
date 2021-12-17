@@ -1,0 +1,16 @@
+var host = getHostname()
+var x
+var y
+while (true) {
+    x = (getServerMoneyAvailable(host)/getServerMaxMoney(host));
+    y = getServerSecurityLevel(host);
+    hack(host);
+    if (x < 0.8) {
+        print("Money % is " + x + ". Growing...")
+        grow(host);
+    }
+    if (y > 2) {
+        print("Security level too high. Weakening...")
+        weaken(host);
+    }
+}
